@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Quantum Random Number Generator</title>
+      <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <!-- Custom styles for this template -->
+      <link href="css/business-frontpage.css" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+      <style>
+         /* CSS for styling */
+         body {
+             /* background:url("/static/images/17973908.jpg"); */
+             /* background-size: 100% 100%;
+             font-family: Arial, sans-serif;
+             background-color: #f0f0f0;
+             margin: 0;
+             padding: 0;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             min-height: 100vh;
+             animation: fadeInAnimation ease 3s;
+             animation-iteration-count: 1;
+             animation-fill-mode: forwards; */
+         }
+         @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        .header{
+         background-color: #121926;
+         height:70px;
+         color:#fff;
+         font-size: 32px;
+         display: flex;
+         align-items: center;
+         margin-left: 10px;
+         box-shadow: 20px 20px 50px grey;
+        }
+        .container-style{
+         margin-top: 100px;
+        }
+        /* .col-style{
+         border: 2px solid #d9d9d9;
+         border-radius: 5px;
+         height:500px;
+        } */
+         
+        .col-footer{
+         cursor: pointer;
+        }
+
+        .card:hover {
+         animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+         transform: translate3d(0, 0, 0);
+         backface-visibility: hidden;
+         perspective: 1000px;
+         }
+
+         @keyframes shake {
+            10%, 90% {
+               transform: translate3d(-1px, 0, 0);
+            }
+            
+            20%, 80% {
+               transform: translate3d(2px, 0, 0);
+            }
+
+            30%, 50%, 70% {
+               transform: translate3d(-4px, 0, 0);
+            }
+
+            40%, 60% {
+               transform: translate3d(4px, 0, 0);
+            }
+            }
+
+
+         </style>
+          <script>
+            function generate(param) {
+               window.location.href="http://localhost:8000/requesthandler/"+param
+            }
+         </script>
+   </head>
+   <body>
+      <div class="row">
+         <div class="col-md-12 header">
+               Quantum Real world Projects
+         </div>
+      </div>
+      <div class="container container-style">
+         <div class="row">
+            <div class="col-md-3">
+               <div class="card">
+                  <div class="card-header">Random Number Generator</div>
+                  <div class="card-body">Quantum Random Number Generation (QRNG) 
+                        generates random numbers with a high source of entropy 
+                        using unique properties of quantum physics.
+                        It generates streams of random digits by sampling a signal that 
+                        contains sufficiently large quantum dynamic numbers.
+                  </div>
+                  <div class="card-footer col-footer" onclick=generate(1)>More >></div>
+                </div>
+               
+            </div>
+            <div class="col-md-3">
+               <div class="card">
+                  <div class="card-header">Factoring Algorithm</div>
+                  <div class="card-body">Shor's algorithm is a quantum algorithm for 
+                     factoring a number N in O((log N)3) time and O(log N) space, 
+                     named after Peter Shor. The algorithm is significant because it implies 
+                     that public key cryptography might be easily broken, given a sufficiently large quantum computer
+                  </div>
+                  <div class="card-footer col-footer" onclick=generate(3)>More >></div>
+                </div>
+            </div>
+         </div>
+      </div>
+     
+      <div class="row">
+         <!-- <div class="col-md-12 mb-5" onclick=generate(1) style="font-size: 12px;cursor: pointer;">
+            <h1 style="color: #0a1a4f;font-size: 48px;"> Random Number Generator</h1>
+         </div> -->
+
+         <!-- <div class="col-md-12 mb-5" onclick=generate(1) style="font-size: 32px;cursor: pointer;">
+            <h1 style="color: #0a1a4f;font-size: 48px;"> Random Number Generator</h1>
+         </div> -->
+         <!-- <div class="col-md-12 mb-5" onclick=generate(2) style="font-size: 32px;cursor: pointer;">
+            <h1 style="color: #0a1a4f;font-size: 48px;"> Prediction</h1>
+         </div> -->
+         <!-- <div class="col-md-12 mb-5" onclick=generate(3) style="font-size: 32px;cursor: pointer;">
+            <h1 style="color: #0a1a4f;font-size: 48px;"> Factoring Algorithm</h1>
+         </div> -->
+      </div>
+   </body>
+</html>
