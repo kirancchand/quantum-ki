@@ -9,7 +9,7 @@
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "quantum-ki/qsite//wsgi.py"
+        "dest": "quantum-ki/qsite/wsgi.py"
       }
     ]
 }
